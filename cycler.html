@@ -73,6 +73,17 @@
 		}
 
 	}
+    function Swap() {
+		var cyclerItems = document.getElementsByClassName("cycler");
+		let rand1 = Math.floor(Math.random() * cyclerItems.length)
+            let rand2 = Math.floor(Math.random() * cyclerItems.length)
+            let item1 = document.getElementsByClassName("cycler")[rand1]
+            let item2 = document.getElementsByClassName("cycler")[rand2]
+            if(cyclerItems.length > 1) {
+                let elem = item1.innerHTML;
+                item1.innerHTML = item2.innerHTML;
+                item2.innerHTML = elem;
+            }
 </script>
 
 </html>
